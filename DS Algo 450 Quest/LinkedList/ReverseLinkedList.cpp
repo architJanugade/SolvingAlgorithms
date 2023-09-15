@@ -33,14 +33,12 @@ class LinkedList
             current->next = prev;
             prev = current;
             current = next;
-
-
         }
         head = prev;
-
-
     }
+
     // 1->2->3->4->5
+    //Recursive approach
     Node* reverseRecursive(Node* head)
     {
         if (head == NULL || head->next == NULL)
@@ -57,6 +55,8 @@ class LinkedList
         /* fix the head pointer */
         return rest;
     }
+
+
     void print()
     {
         Node* printVal = head;
@@ -87,14 +87,8 @@ class LinkedList
 
 };
 
-
-
-
-
 int main()
 {
-    
-
 
 }
 
